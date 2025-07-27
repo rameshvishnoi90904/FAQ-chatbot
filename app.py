@@ -7,7 +7,7 @@ ingest_fag_data()
 st.title("FAQ Chatbot")
 
 # 2. Input box
-input_paragraph = st.text_area("Enter a your query here: (Ask about NEFT, RTGS, Amortization, or any banking queries)")
+input_paragraph = st.text_area("Enter a your query here:", placeholder="Ask about NEFT, RTGS, Amortization, or any banking queries")
 
 # 3. Button
 extract_button = st.button("Find Answer")
