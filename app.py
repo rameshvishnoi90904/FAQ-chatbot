@@ -2,7 +2,7 @@ from faq import faq_chain, ingest_fag_data
 import streamlit as st
 # Load data first
 ingest_fag_data()
-st.sidebar.button("Load FAQ Data", on_click=ingest_fag_data)
+# st.sidebar.button("Load FAQ Data", on_click=ingest_fag_data)
 # 1. Title
 st.title("FAQ Chatbot")
 
