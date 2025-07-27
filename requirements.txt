@@ -4,3 +4,4 @@ groq
 dotenv
 chromadb
 pysqlite3-binary
+sentence-transformers
