@@ -58,4 +58,4 @@ pip install -r requirements.txt
 
 ### Screenshot
 
-![Screenshot of the application](image.png)
+![Screenshot of the application](image-1.png)
