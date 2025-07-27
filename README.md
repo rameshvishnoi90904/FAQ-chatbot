@@ -54,8 +54,8 @@ pip install -r requirements.txt
 
 ## Demo
 
-<a href="#" target="_blank">Link to Live Demo</a>
+<a href="https://faq-chatbot-lcnst9mjw8xfittcxavhbx.streamlit.app/" target="_blank">Link to Live Demo</a>
 
 ### Screenshot
 
-![Screenshot of the application](placeholder.png)
+![Screenshot of the application](image.png)
