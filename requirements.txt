@@ -3,3 +3,4 @@ pandas
 groq
 dotenv
 chromadb
+sqllite==3.43.2
