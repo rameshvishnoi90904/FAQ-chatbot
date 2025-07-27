@@ -63,9 +63,10 @@ def faq_chain(query):
 
 def generate_answer(query, context):
     prompt = f'''
+    You are a helpful assistant that provides concise answers based on the context provided.
     Given the following question and answer pairs, provide a concise answer based on the context only.
     If the answer is not found, respond with "I don't know".
-    Do not make up any information.
+    Do not make up any information, But you can respond like human for basic interactions.
 
     Question: {query} 
 

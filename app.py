@@ -6,13 +6,22 @@ ingest_fag_data()
 # 1. Title
 st.title("FAQ Chatbot")
 
-# 2. Input box
-input_paragraph = st.text_area("Enter a your query here:", placeholder="Ask about NEFT, RTGS, Amortization, or any banking queries")
+if "messages" not in st.session_state: 
+    st.session_state["messages"] = []
 
-# 3. Button
-extract_button = st.button("Find Answer")
+for message in st.session_state.messages:
+    with st.chat_message(message['role']):
+        st.markdown(message['content'])
 
-if extract_button:
-    answer = faq_chain(input_paragraph)
-    st.header("Results")
-    st.write("Answer:", answer)
+input_paragraph = st.chat_input("Ask about NEFT, RTGS, Amortization, or any banking queries")
+
+if input_paragraph:
+    with st.chat_message("user"):
+        st.markdown(input_paragraph)
+    st.session_state.messages.append({'role': 'user', 'content': input_paragraph})
+
+    response  = faq_chain(input_paragraph)
+    with st.chat_message("assistant"):
+        st.markdown(response)
+    st.session_state.messages.append({'role': 'assistant', 'content': response})
+    
