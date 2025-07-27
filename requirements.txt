@@ -2,5 +2,4 @@ streamlit
 pandas
 groq
 dotenv
-chromadb
-sqllite==3.43.2
+chromadb==0.3.21
